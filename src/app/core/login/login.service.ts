@@ -1,5 +1,20 @@
-//service method fot aruthenticate user
+import { Injectable } from '@angular/core';
 
-function authenticateUser(){
+@Injectable({
+  providedIn: 'root'
+})
+export class LoginService {
+
+  constructor() { }
+
+AuthenticateUser(userName:string,userPswd:string){
+    let baseURl=''+userName+userPswd;
+    return(baseURl);
+
+
+}
+
+
+
 
 }
